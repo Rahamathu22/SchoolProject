@@ -1,0 +1,6 @@
+c:\users\rahamath\documents\visual studio 2012\Projects\SchoolApplication\SchoolApplication\bin\Debug\SchoolApplication.exe.config
+c:\users\rahamath\documents\visual studio 2012\Projects\SchoolApplication\SchoolApplication\bin\Debug\SchoolApplication.exe
+c:\users\rahamath\documents\visual studio 2012\Projects\SchoolApplication\SchoolApplication\bin\Debug\SchoolApplication.pdb
+c:\users\rahamath\documents\visual studio 2012\Projects\SchoolApplication\SchoolApplication\obj\Debug\SchoolApplication.csprojResolveAssemblyReference.cache
+c:\users\rahamath\documents\visual studio 2012\Projects\SchoolApplication\SchoolApplication\obj\Debug\SchoolApplication.exe
+c:\users\rahamath\documents\visual studio 2012\Projects\SchoolApplication\SchoolApplication\obj\Debug\SchoolApplication.pdb
