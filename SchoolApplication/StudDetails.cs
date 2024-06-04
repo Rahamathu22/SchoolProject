@@ -58,7 +58,7 @@ namespace SchoolApplication
         }
 
         
-        public StudDetails(int Class, string Section, string Year, string Name, string DateOfBirth, string Blood_Group, string AddressId)
+        public StudDetails(int Class, string Section, string Year, string Name, string DateOfBirth, string Blood_Group, Address Address)
         {
              this._Class=Class;
              this._Section=Section;
@@ -66,7 +66,7 @@ namespace SchoolApplication
              this._Name=Name;
              this._DateOfBirth=DateOfBirth;
              this._Blood_Group=Blood_Group;
-             this._AddressId = AddressId;
+             this._Address = Address;
              
         }
 

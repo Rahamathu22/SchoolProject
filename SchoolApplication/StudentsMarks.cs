@@ -63,6 +63,7 @@ namespace SchoolApplication
             get { return _Mark; }
             set { _Mark = value; }
         }
+        
 
         public StudentsMarks(int StudId, int Class, string Section, string Year, int SubjectId, int TypeOfExam, string Name, float Mark)
         {

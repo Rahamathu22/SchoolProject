@@ -8,8 +8,15 @@ namespace SchoolApplication
 {
    public  class Repositories
     {
-        public static void InsertStudDetails(int Class, string Section, string Year, string Name, string DateOfBirth, string Blood_Group, string AddressId)
+        public static void InsertStudDetails(StudDetails student)
         {
+            int Class=student.Class;
+            string Section=student.Section;
+            string Year=student.Year;
+            string Name=student.Name;
+            string DateOfBirth=student.DateOfBirth;
+            string Blood_Group=student.Blood_Group;
+            string Address = student.AddressId;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
