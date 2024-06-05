@@ -16,7 +16,7 @@ namespace SchoolApplication
             string Name=student.Name;
             string DateOfBirth=student.DateOfBirth;
             string Blood_Group=student.Blood_Group;
-            string Address = student.AddressId;
+            
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
@@ -53,8 +53,11 @@ namespace SchoolApplication
             }
         }
 
-        public static void InsertClassDetails(int Class, string Section, int Class_Teacher)
+        public static void InsertClassDetails(ClassDetails cls)
         {
+            int Class=cls.Class;
+            string Section=cls.Section;
+            int Class_Teacher = cls.Class_Teacher;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))

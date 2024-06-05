@@ -14,13 +14,7 @@ namespace SchoolApplication
             get { return _Name; }
             set { _Name = value; }
         }
-        private int _AddressId;
-
-        public int AddressId
-        {
-            get { return _AddressId; }
-            set { _AddressId = value; }
-        }
+       
         private string _Qualification;
 
         public string Qualification
@@ -42,10 +36,10 @@ namespace SchoolApplication
             get { return _PreviousExperience; }
             set { _PreviousExperience = value; }
         }
-        public StaffDetails(string Name, int AddressId, string Qualification, string JoiningYear, string PreviousExperience)
+        public StaffDetails(string Name, string Qualification, string JoiningYear, string PreviousExperience)
         {
             this._Name=Name;
-            this._AddressId=AddressId;
+            
             this._Qualification=Qualification;
             this._JoiningYear=JoiningYear;
             this._PreviousExperience = PreviousExperience;
