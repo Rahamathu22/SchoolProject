@@ -5,35 +5,14 @@ using System.Text;
 
 namespace SchoolApplication
 {
-   public class Address
+   public class StaffAddress
     {
-        private int _StudId;
+        private int _StaffId;
 
-        public int StudId
+        public int StaffId
         {
-            get { return _StudId; }
-            set { _StudId = value; }
-        }
-        private int _Class;
-
-        public int Class
-        {
-            get { return _Class; }
-            set { _Class = value; }
-        }
-        private string _Section;
-
-        public string Section
-        {
-            get { return _Section; }
-            set { _Section = value; }
-        }
-        private string _Year;
-
-        public string Year
-        {
-            get { return _Year; }
-            set { _Year = value; }
+            get { return _StaffId; }
+            set { _StaffId = value; }
         }
         private string _DoorNo;
 
@@ -77,13 +56,6 @@ namespace SchoolApplication
             get { return _Pin_Code; }
             set { _Pin_Code = value; }
         }
-        private string _Mobile_Number;
-
-        public string Mobile_Number
-        {
-            get { return _Mobile_Number; }
-            set { _Mobile_Number = value; }
-        }
         private string _Mail_Id;
 
         public string Mail_Id
@@ -91,19 +63,15 @@ namespace SchoolApplication
             get { return _Mail_Id; }
             set { _Mail_Id = value; }
         }
-        public Address(int StudId,int Class,string Section,string Year,string DoorNo, string Street, string Village, string City, string State, string Pin_Code, string Mobile_Number, string Mail_Id)
+        public StaffAddress(int StaffId,string DoorNo,string Street,string Village,string City,string State,string Pin_Code,string Mail_Id)
         {
-            this._StudId=StudId;
-            this._Class=Class;
-            this._Section=Section;
-            this._Year=Year;
+            this._StaffId=StaffId;
             this._DoorNo=DoorNo;
             this._Street=Street;
             this._Village=Village;
             this._City=City;
             this._State=State;
             this._Pin_Code=Pin_Code;
-            this._Mobile_Number=Mobile_Number;
             this._Mail_Id = Mail_Id;
         }
     }

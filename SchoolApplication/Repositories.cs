@@ -34,8 +34,20 @@ namespace SchoolApplication
             }
         }
 
-        public static void Insert_Address(string DoorNo, string Street, string Village, string City, string State, string Pin_Code, string Mobile_Number, string Mail_Id)
+        public static void Insert_Address(Address add)
         {
+            int StudId=add.StudId;
+            int Class=add.Class;
+            string Section=add.Section;
+            string Year=add.Year;
+            string DoorNo=add.DoorNo;
+            string Street=add.Street;
+            string Village=add.Village;
+            string City=add.City;
+            string State=add.State;
+            string Pin_Code=add.Pin_Code;
+            string Mobile_Number=add.Mobile_Number;
+            string Mail_Id = add.Mail_Id;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
@@ -75,8 +87,12 @@ namespace SchoolApplication
             }
         }
 
-        public static void InsertStaffDetails(string Name, int AddressId, string Qualification, string JoiningYear, string PreviousExperience)
+        public static void InsertStaffDetails(StaffDetails staff)
         {
+            string Name=staff.Name;
+            string Qualification=staff.Qualification;
+            string JoiningYear=staff.JoiningYear;
+            string PreviousExperience = staff.PreviousExperience;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
@@ -113,8 +129,10 @@ namespace SchoolApplication
             }
         }
 
-        public static void InsertSubjectDetails(int Class, string SubjectName)
+        public static void InsertSubjectDetails(SubjectDetails subdtl)
         {
+            int Class=subdtl.Class;
+            string SubjectName = subdtl.SubjectName;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
@@ -132,8 +150,13 @@ namespace SchoolApplication
             }
         }
 
-        public static void InsertSubAndStaffRealation(int SubjectId, int Class, string Section, string Year, int StaffId)
+        public static void InsertSubAndStaffRealation(SubAndStaffRelation substaff)
         {
+            int SubjectId=substaff.SubjectId;
+            int Class=substaff.Class;
+            string Section=substaff.Section;
+            string Year=substaff.Year;
+            int StaffId = substaff.StaffId;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
@@ -151,8 +174,9 @@ namespace SchoolApplication
             }
         }
 
-        public static void InsertExamType(string ExamType)
+        public static void InsertExamType(ExamType et)
         {
+            string ExamType = et.ExamType1;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
@@ -170,8 +194,16 @@ namespace SchoolApplication
             }
         }
 
-        public static void InsertStudentMarks(int StudId, int Class, string Section, string Year, int SubjectId, int TypeOfExam, string Name, float Mark)
+        public static void InsertStudentMarks(StudentsMarks mar)
         {
+            int StudId=mar.StudId;
+            int Class=mar.Class;
+            string Section=mar.Section;
+            string Year=mar.Year;
+            int SubjectId=mar.SubjectId;
+            int TypeOfExam=mar.TypeOfExam;
+            string Name=mar.Name;
+            float Mark = mar.Mark;
             try
             {
                 using (SqlConnection con = new SqlConnection(Properties.Settings.Default.Data))
